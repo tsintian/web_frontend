@@ -1,0 +1,6 @@
+{
+    "python.linting.pylintEnabled": true,
+    "jshint.options": {
+        "esversion": 6
+    }
+}
