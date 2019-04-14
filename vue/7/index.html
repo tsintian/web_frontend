@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./index.css">
+        <script src="../vue.js"></script>
+    </head>
+
+    <div id="app-7">
+        <todo-item 
+        v-for="item in groceryList"
+        v-bind:todo="item"
+        v-bind:key="item.id">
+
+        </todo-item>
+    </div>
+    <script src="./index.js"></script>
+</html>

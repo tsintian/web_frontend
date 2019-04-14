@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>using flexbox layout </title>
+        <style>
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .main-and-sidebar-wrapper{
+                display: flex;
+                flex-direction: row;
+            }
+
+            .main{
+                flex:3;
+                margin-right: 70px;
+            }
+
+            .sidebar{
+                flex: 1;
+            }
+
+            header{
+                color: #ef5350;
+                padding: 40px 0;
+                margin-bottom: 60px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            header nav{
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+
+            }
+
+            head nav li{
+                margin: 210px;
+            }
+
+            header button {
+                background-color: #ef5350;
+                border: none;
+                padding: 8px 25px;
+                color: #fff;
+                cursor: pointer;
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+       
+            <header>
+                <nav>
+                    <li><a href="#"><h1>Header</h1></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </nav>
+                <button>Button</button>
+            </header>
+            <div class="main-and-sidebar-wrapper"> 
+                <section class="main">
+                        <h2>Flexbox Layout</h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            
+                        <img src="https://unsplash.it/500/550?image=116">        
+                </section>
+                <section class="sidebar">
+                    <h3>sidebar</h3>
+                </section>
+            </div>
+            <footer></footer>   
+        </div>
+    </body>
+</html>
